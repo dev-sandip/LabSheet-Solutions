@@ -11,8 +11,8 @@ int n;
 float  sum=0;
 printf("Enter the number upto which you want to find the series:\n");
 scanf("%d",&n);
-for(int i=0 ; i<=n; i++){
-sum = sum + (float)(1.0/factorial(i));
+for(int i=1 ; i<=n; i++){
+sum =  sum +(float)(1.0/factorial(i));
 }
 printf("The sum of series is %f",sum);
 return 0;

@@ -1,3 +1,4 @@
+//WAP to read 10 numbers from user and find their sum and average.
 #include<stdio.h>
 int main (){
 int a;
