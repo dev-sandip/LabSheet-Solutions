@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main (){
 int a;
-int sum=0;;
+int sum=0;
 float average=0;
 printf("Enter the numbers to find the sum\n");
 for( int i=0; i<10; i++){
