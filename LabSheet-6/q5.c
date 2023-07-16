@@ -1,27 +1,16 @@
-// WAP to display the nth Fibonacci number using recursion.
-
 #include <stdio.h>
-
-int fibonacci(int n) {
-    if (n <= 1)
-        return n;
-    else
-        return fibonacci(n - 1) + fibonacci(n - 2);
+void swap(int *a,int *b){
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b=temp;
 }
-int main() {
-    int n;
-int i;
-
-    printf("Enter the number of terms: ");
-    scanf("%d", &n);
-
-  
-    printf("Fibonacci series up to %d terms:\n", n);
-
-    for (i = 0; i < n; ++i) {
-        printf("%d ", fibonacci(i));
-    }
-
-
+int main()
+{
+    int  a =10;
+    int b = 69;
+    printf("Before swapping a=%d and b = %d\n",a,b);
+    swap(&a,&b);
+     printf("After swapping a=%d and b = %d\n",a,b);
     return 0;
 }

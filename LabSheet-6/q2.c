@@ -2,6 +2,7 @@
 // function factorial() and power() should be used to calculate the factorial and power.
 #include<stdio.h>
 double power(double x, int i) {
+    int result;
     if (i>= 0) {
         for (int i = 0; i < i; i++) {
             result *= x;

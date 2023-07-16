@@ -1,19 +1,27 @@
-//  WAP to calculate factorial using Recursion.
+// WAP to display the nth Fibonacci number using recursion.
 
 #include <stdio.h>
-    long factorial (int n){
-   if(n==0)
-   return 1;
-   else 
-   return n*factorial(n-1);
-}
-int main()
-{
-    int n,result;
-    printf("Enter the number to find the factorial :\n");
 
- scanf("%d", &n);
- result= factorial(n);
- printf("The factorial of %d is %d",n,result);
+int fibonacci(int n) {
+    if (n <= 1)
+        return n;
+    else
+        return fibonacci(n - 1) + fibonacci(n - 2);
+}
+int main() {
+    int n;
+int i;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+  
+    printf("Fibonacci series up to %d terms:\n", n);
+
+    for (i = 0; i < n; ++i) {
+        printf("%d ", fibonacci(i));
+    }
+
+
     return 0;
 }
