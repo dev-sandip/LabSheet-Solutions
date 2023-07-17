@@ -1,4 +1,4 @@
-# ERC LabSheet Solutions ERC
+# ERC LabSheet Solutions
 
 It is a Solutions of Labsheets of C-Programming for first semester of Bachelor of Computer Enginnering !!
 
