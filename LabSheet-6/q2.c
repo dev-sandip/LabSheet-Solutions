@@ -1,40 +1,48 @@
 //  WAP to display sum of series: x + x2/2! + x3/3! + x4/4! + x5/5! ... xn/n!. User defined
 // function factorial() and power() should be used to calculate the factorial and power.
-#include<stdio.h>
+#include <stdio.h>
+
 double power(double x, int i) {
-    int result;
-    if (i>= 0) {
-        for (int i = 0; i < i; i++) {
+    double result = 1.0;
+    if (i >= 0) {
+        for (int j = 0; j < i; j++) {
             result *= x;
         }
     } else {
-        for (int i = 0; i > i; i--) {
-            result /=x;
+        for (int j = 0; j > i; j--) {
+            result /= x;
         }
     }
-    
     return result;
 }
-long factorial (int n){
-   if(n==0)
-   return 1;
-   else 
-   return n*factorial(n-1);
+
+long factorial(int n) {
+    if (n == 0)
+        return 1;
+    else
+        return n * factorial(n - 1);
 }
-int main(){
+
+int main() {
     int n;
     int x;
-    float sum =0;
-    printf("Enter the numbers of elements in series\n");    
-scanf("%d",&n);
-   printf("Enter the value of x\n");    
-scanf("%d",&x);
-for(int i=1; i<=n; i++){
-sum = sum + (float)(power(x,i))/factorial(i);
+    double sum = 0.0;
+    
+    printf("Enter the number of elements in the series: ");
+    scanf("%d", &n);
+    
+    printf("Enter the value of x: ");
+    scanf("%d", &x);
+    
+    for (int i = 1; i <= n; i++) {
+        sum += power(x, i) / factorial(i);
+    }
+    
+    printf("The sum of the series is %f\n", sum);
+    
+    return 0;
 }
-printf("The sum of series is %f",sum);
-return 0;
-}
+
 
 
 
