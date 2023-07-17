@@ -17,7 +17,7 @@ for(i=0;i<m;i++){
         b[i][j]=a[j][i];
     }
 }
-
+printf("The transpose of given matrix is :\n");
 for(i=0;i<m;i++){
     for(j=0;j<n;j++){
         printf("%d\t",b[i][j]);

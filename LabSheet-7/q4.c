@@ -1,7 +1,6 @@
 // WAP to count the frequency of the elements in an array.
 
-#include <stdio.h>
-    
+#include <stdio.h>   
 int main()
 {
     int a[100],b[100],n,i,j, count=0;
